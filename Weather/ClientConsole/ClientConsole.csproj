@@ -9,4 +9,8 @@
     <PackageReference Include="Grpc.AspNetCore" Version="2.23.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherClientLib\WeatherClientLib.csproj" />
+  </ItemGroup>
+
 </Project>

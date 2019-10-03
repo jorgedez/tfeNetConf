@@ -2,6 +2,7 @@
 using Grpc.Net.Client;
 using System;
 using System.Threading.Tasks;
+using static Weather.Weather;
 
 namespace ClientConsole
 {
@@ -9,7 +10,7 @@ namespace ClientConsole
     {
         static async Task Main(string[] args)
         {
-            var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            var channel = GrpcChannel.ForAddress("http://localhost:5000");
             
             var client = new WeatherClient(channel);
 
