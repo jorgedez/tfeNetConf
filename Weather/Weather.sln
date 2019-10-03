@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConsole", "ClientConsole\ClientConsole.csproj", "{5934FA14-B4FB-45E2-8BFA-0BA1DE4FC509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientConsole", "ClientConsole\ClientConsole.csproj", "{5934FA14-B4FB-45E2-8BFA-0BA1DE4FC509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{DFE8FFA4-D656-4A96-AA12-65E14333F967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather", "Weather\Weather.csproj", "{DFE8FFA4-D656-4A96-AA12-65E14333F967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherClientLib", "WeatherClientLib\WeatherClientLib.csproj", "{5087CCE1-59A2-4A72-90DC-9A8C115BDF9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherClientLib", "WeatherClientLib\WeatherClientLib.csproj", "{5087CCE1-59A2-4A72-90DC-9A8C115BDF9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConsoleStream", "ClientConsoleStream\ClientConsoleStream.csproj", "{12095EE9-2DA7-4586-B561-F6E46F270B4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5087CCE1-59A2-4A72-90DC-9A8C115BDF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5087CCE1-59A2-4A72-90DC-9A8C115BDF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5087CCE1-59A2-4A72-90DC-9A8C115BDF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12095EE9-2DA7-4586-B561-F6E46F270B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12095EE9-2DA7-4586-B561-F6E46F270B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12095EE9-2DA7-4586-B561-F6E46F270B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12095EE9-2DA7-4586-B561-F6E46F270B4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

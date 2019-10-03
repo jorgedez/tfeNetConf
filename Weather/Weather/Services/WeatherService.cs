@@ -22,7 +22,7 @@ namespace Weather.Services
             {
                 var cachedForecast = _cache.Get<Forecast>(Constants.LATEST_FORECAST_CACHE_KEY);
                 await responseStream.WriteAsync(GetCurrentWeatherResponse(cachedForecast));
-                await Task.Delay(TimeSpan.FromSeconds(2));
+                await Task.Delay(TimeSpan.FromSeconds(10));
             }
         }
 
