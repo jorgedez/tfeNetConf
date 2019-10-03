@@ -15,10 +15,10 @@ namespace Weather
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(c => c.AddDefaultPolicy(builder =>
-            {
-                builder.AllowAnyOrigin();
-            }));
+            //services.AddCors(c => c.AddDefaultPolicy(builder =>
+            //{
+            //    builder.AllowAnyOrigin();
+            //}));
             services.AddGrpc();
             services.AddHttpClient("AccuWeather")
                     .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler()
@@ -45,12 +45,12 @@ namespace Weather
 
             app.UseRouting();
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Weather API v1");
-            });
-            app.UseCors();
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Weather API v1");
+            //});
+            //app.UseCors();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGrpcService<WeatherService>();

@@ -59,18 +59,18 @@ namespace Weather.Services
             {
                 WeatherText = forecast.WeatherText,
                 IsDayTime = forecast.IsDayTime,
-                Pressure = forecast.Pressure.Imperial.Value,
+                Pressure = forecast.Pressure.Metric.Value,
                 RelativeHumidity = forecast.RelativeHumidity,
                 RetrievedTime = Timestamp.FromDateTime(DateTime.UtcNow),
-                Temperature = forecast.Temperature.Imperial.Value,
+                Temperature = forecast.Temperature.Metric.Value,
                 UvIndex = forecast.UVIndex,
                 WeatherIcon = forecast.WeatherIcon,
                 WeartherUri = $"https://developer.accuweather.com/sites/default/files/{forecast.WeatherIcon:D2}-s.png",
-                WindSpeed = forecast.Wind.Speed.Imperial.Value,
+                WindSpeed = forecast.Wind.Speed.Metric.Value,
                 WindDirection = forecast.Wind.Direction.English,
-                Past6HourMax = forecast.TemperatureSummary.Past6HourRange.Maximum.Imperial.Value,
-                Past6HourMin = forecast.TemperatureSummary.Past6HourRange.Minimum.Imperial.Value,
-                Location = "Seattle"
+                Past6HourMax = forecast.TemperatureSummary.Past6HourRange.Maximum.Metric.Value,
+                Past6HourMin = forecast.TemperatureSummary.Past6HourRange.Minimum.Metric.Value,
+                Location = "Santa Cruz de Tenerife"
             };
         }
     }

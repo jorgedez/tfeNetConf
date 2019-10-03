@@ -43,7 +43,7 @@ namespace Weather
                     {
                         var client = _httpClientFactory.CreateClient("AccuWeather");
 
-                        var response = await client.GetAsync($"{_configuration["weather:uri"]}/340247?apikey={_configuration["accuweathertoken"]}&details=true");
+                        var response = await client.GetAsync($"{_configuration["weather:uri"]}/{_configuration["weather:zone"]}?apikey={_configuration["accuweathertoken"]}&details=true");
 
                         var model = await JsonSerializer.DeserializeAsync<Forecast[]>(await response.Content.ReadAsStreamAsync());
 
