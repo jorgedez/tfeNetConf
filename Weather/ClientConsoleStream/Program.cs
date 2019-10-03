@@ -23,7 +23,7 @@ namespace ClientConsoleStream
                 {
                     await foreach (var forecast in streamForecast.ResponseStream.ReadAllAsync())
                     {
-                        Console.WriteLine($"{forecast.Location} | {forecast.Temperature} C | {forecast.Past6HourMax} C | { forecast.Past6HourMin} C | {forecast.Pressure} | {forecast.WindDirection} | {forecast.WindSpeed} km/h");
+                        Console.WriteLine($"{forecast.Location} | {forecast.Temperature} C | {forecast.Past6HourMax} C | { forecast.Past6HourMin} C | {forecast.Pressure} | {forecast.WindDirection} | {forecast.WindSpeed} km/h | {DateTime.Now}");
                     }
                 }
                 catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled)
